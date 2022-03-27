@@ -68,19 +68,22 @@
 		</style>
 		
 		<!-- Preloader -->
-        <link rel="stylesheet" href="preloader.css" />
-        <div id="preloaderWrapper">
-          <div class="container-fluid preloader" id="preloader">
-            <img class="tiaa" src="logo.png" alt="logo" />
-            <h2>Please Wait...</h2>
-          </div>
-        </div>
-        <script>
-          const preloaderWrapperElement=document.getElementById("preloaderWrapper");
-          window.addEventListener("load", () => {
-            preloaderWrapperElement.style.display = "none";
-          });
-        </script>
+     <link rel="stylesheet" href="Preloader/style.css" />
+     <div id="preloaderWrapper">
+       <div class="container-fluid preloader" id="preloader">
+         <img class="tiaa" src="logo.png" alt="logo" />
+         <h2>Please Wait...</h2>
+       </div>
+     </div>
+    <script src="Preloader/script.js"></script>
+     <script >
+       const preloaderWrapperElement =
+         document.getElementById("preloaderWrapper");
+       window.addEventListener("load", () => {
+       
+         preloaderWrapperElement.style.display = "none";
+       });
+     </script>  
 		
 		<!--cover-->
 		<link rel="stylesheet" href="cover.css"/>
